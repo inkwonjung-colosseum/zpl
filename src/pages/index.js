@@ -208,12 +208,26 @@ const ZPLPreviewPage = () => {
               <span>개발 전용 페이지 - ZPL 코드 테스트 및 미리보기</span>
             </div>
           </div>
-          <Link 
-            href="/zpl-reference"
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
-          >
-            📚 ZPL 문법 참조
-          </Link>
+          <div className="flex gap-2">
+            <Link 
+              href="/template-builder"
+              className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
+            >
+              🚀 스마트 빌더
+            </Link>
+            <Link 
+              href="/visual-editor"
+              className="px-4 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors"
+            >
+              🎨 비주얼 에디터
+            </Link>
+            <Link 
+              href="/zpl-reference"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+            >
+              📚 ZPL 문법 참조
+            </Link>
+          </div>
         </div>
       </div>
 

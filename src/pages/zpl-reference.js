@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 // ZPL 명령어 카테고리별 정리
 const ZPL_COMMANDS = {
@@ -367,10 +368,34 @@ const ZPLReferencePage = () => {
     <div className="max-w-7xl mx-auto p-6 bg-gray-50 min-h-screen">
       {/* 헤더 */}
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">ZPL 문법 참조 가이드</h1>
-        <p className="text-gray-600 text-lg">
-          Zebra Programming Language (ZPL)의 모든 명령어와 사용법을 예제와 함께 정리했습니다.
-        </p>
+        <div className="flex justify-between items-start mb-4">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-800 mb-2">ZPL 문법 참조 가이드</h1>
+            <p className="text-gray-600 text-lg">
+              Zebra Programming Language (ZPL)의 모든 명령어와 사용법을 예제와 함께 정리했습니다.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <Link 
+              href="/template-builder"
+              className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
+            >
+              🚀 스마트 빌더
+            </Link>
+            <Link 
+              href="/visual-editor"
+              className="px-4 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors"
+            >
+              🎨 비주얼 에디터
+            </Link>
+            <Link 
+              href="/"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+            >
+              🔧 코드 에디터
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* 카테고리 네비게이션 */}
